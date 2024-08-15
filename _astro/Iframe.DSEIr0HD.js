@@ -1,0 +1,1 @@
+import{j as a}from"./jsx-runtime.7faW4zRM.js";import{r as t}from"./index.DhYZZe0J.js";function c({url:e}){const[s,r]=t.useState("");return t.useEffect(()=>{if(typeof window<"u"){const o=new URLSearchParams(window.location.search).get("slug");r(o)}},[]),a.jsx("iframe",{className:"w-full h-[100vh]",src:`${e}${s}`})}export{c as default};

@@ -1,0 +1,1 @@
+const e=document.querySelector(".banner"),t=document.querySelector(".banniere"),n=document.querySelector(".btn");document.onreadystatechange=c=>{document.readyState==="complete"&&setTimeout(()=>{e.style.height=`${t.offsetHeight}px`},1e3)};n.addEventListener("click",()=>{e.style.height="0px"});

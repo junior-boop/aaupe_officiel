@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime.7faW4zRM.js";import{E as r}from"./entete.BnFe7zPf.js";import i from"./section.-8nanTih.js";import"./index.DhYZZe0J.js";import"./icons.BYcsL8y_.js";function c(){return t.jsxs(t.Fragment,{children:[t.jsx(r,{titre:"Actualités"}),t.jsx(i,{children:t.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"})})]})}export{c as default};

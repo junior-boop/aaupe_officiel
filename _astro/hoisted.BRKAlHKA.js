@@ -1,0 +1,1 @@
+import"./hoisted.Bmsq-D9n.js";import"./hoisted.COZ5XO2Y.js";document.addEventListener("DOMContentLoaded",function(){const t=document.querySelectorAll(".slide");let e=0;gsap.set(t[0],{opacity:1});function n(){gsap.to(t[e],{opacity:0,duration:1}),e=(e+1)%t.length,gsap.to(t[e],{opacity:1,duration:1})}setInterval(n,7e3)});

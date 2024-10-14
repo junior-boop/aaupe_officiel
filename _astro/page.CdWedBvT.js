@@ -1,0 +1,22 @@
+import{j as e}from"./jsx-runtime.7faW4zRM.js";import{g as c}from"./gql.BxQgxVmM.js";import{E as d}from"./entete.FfZv1ywV.js";import u from"./section.-8nanTih.js";import{h as m}from"./moment.C5S46NFB.js";import{d as p,f as x}from"./icons.BTq2nFqG.js";import{c as g}from"./index.D7LSBu92.js";import{r as l}from"./index.DhYZZe0J.js";import{L as f}from"./Loader.BvGW5vs7.js";function h({data:s}){const t=s.title.length>40?`${s.title.substring(0,36)}...`:s.title,r=s.content.raw.children,i=s.titleSlug;r.filter(a=>a.type==="paragraph");const n=s.description[0].length>100?`${s.description[0].substring(0,120)}...`:s.description[0],o=m(s.publishedAt).calendar();return e.jsx("a",{href:`/stories/article?slug=${i}`,className:"text-gray-800 hover:text-gray-800 flex h-full",children:e.jsxs("div",{className:"px-6 pt-4 lg:pt-9 lg:px-9 rounded-lg bg-slate-50 h-full flex flex-col justify-between hover:bg-slate-200 hover:shadow-sm",children:[e.jsxs("div",{children:[e.jsx("div",{className:"font-judson text-3xl lg:text-[32px] font-bold first-letter:uppercase",style:{lineHeight:1.2},children:t}),e.jsxs("div",{className:"mb-4 text-base lg:text-xl font-bold",children:["Récit de : ",s.bioOf]}),e.jsx("div",{className:"mb-4 text-base lg:text-xl",children:n}),e.jsx("div",{className:"text-sm lg:text-base",children:"Publier le :"}),e.jsx("div",{className:"mb-4 text-sm lg:text-base font-bold",children:o})]}),e.jsxs("div",{className:" flex items-center justify-end h-[92px]",children:["Lire plus",e.jsx("button",{className:" w-11 aspect-square flex items-center justify-center",children:e.jsx(p,{className:"w-9 h-9"})})]})]})})}const b=async()=>{const s=c`
+    query MyQuery {
+        stories(first: 20, orderBy: publishedAt_DESC, stage: PUBLISHED) {
+            bioOf
+            title
+            titleSlug
+            stage
+            id
+            createdAt
+            createdBy {
+                id
+                name
+            }
+            content {
+                html
+                raw
+            }
+            publishedAt
+            description
+        }
+    }
+`,t=await g.request(s);return t.stories,t};function L(){const[s,t]=l.useState([]);return l.useEffect(()=>{async function r(){const{stories:i}=await b();t(i)}r()},[]),e.jsxs(e.Fragment,{children:[e.jsx(d,{titre:"Récits"}),e.jsxs(u,{children:[e.jsxs("div",{className:"p-4 lg:p-9 bg-slate-100 rounded-lg mb-11 flex flex-col lg:flex-row gap-5 items-start",children:[e.jsxs("div",{children:[" ",e.jsx(x,{className:"h-10 lg:h-16 w-10 lg:w-16 "})]}),"Pour préserver la sécurité de nos enfants sur Internet, il est recommandé d'adopter quelques règles simples : éviter de publier leurs photos, sauf si elles sont floutées ou si leur visage n'est pas visible, ne pas partager leur nom complet sur les réseaux sociaux, et privilégier les pseudonymes. En adoptant ces bonnes pratiques, nous contribuons à leur offrir une enfance numérique sereine."]}),s.length===0?e.jsx(f,{}):e.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",children:s.map((r,i)=>e.jsx(h,{data:r},i))})]})]})}export{L as default};

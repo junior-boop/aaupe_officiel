@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime.7faW4zRM.js";import{c as s}from"./icons.BTq2nFqG.js";const i=({white:t})=>e.jsx("div",{className:"flex items-center justify-center h-[50vh] w-full",children:e.jsxs("div",{className:`flex flex-col justify-center items-center gap-4 ${t?"text-white":"text-gray-800"}`,children:[e.jsx(s,{className:"h-9 w-9"}),"Chargement..."]})});export{i as L};

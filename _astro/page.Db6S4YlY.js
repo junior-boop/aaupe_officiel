@@ -1,5 +1,5 @@
 import{j as e}from"./jsx-runtime.7faW4zRM.js";import{r as n}from"./index.DhYZZe0J.js";import{c as l}from"./index.D7LSBu92.js";function o({image:a,name:r,role:s,surname:t}){return e.jsxs("div",{className:"flex flex-col gap-4",children:[e.jsx("div",{className:"w-full aspect-square bg-center bg-no-repeat bg-cover rounded-lg",style:{backgroundImage:`url("${a}")`}}),e.jsxs("div",{children:[e.jsxs("div",{className:"font-judson name-member space-x-2 mb-[-5px]",children:[e.jsx("span",{className:"font-light",children:t}),e.jsx("span",{className:"font-extrabold uppercase",children:r})]}),e.jsx("div",{className:"text-gray-600 text-sm lg:text-base font-bold",children:s})]})]})}const m=async()=>await l.request(`query MyQuery {
-  membres {
+  membres(orderBy: indice_ASC) {
     nom
     prenom
     adresseMail
